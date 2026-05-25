@@ -1,0 +1,54 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+
+# Rider / Visual Studio / VS Code
+.idea/
+/.vs/
+.vscode/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Rider/IDE backup
+*.bak
+*.swp
+*.tmp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Godot engine install (local only)
+Godot_v*/
+
+# Godot generated cache
+.godot/
+
+# Third-party / extracted game assets (keep project config only)
+script-tanks/assets/
+
+# Nested duplicate git checkout
+ScriptTanks/
+
+# Optional internal design docs (not part of core repo)
+ScriptTanks_Document_Package/
