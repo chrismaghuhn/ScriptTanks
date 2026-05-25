@@ -1,0 +1,17 @@
+name: .NET CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: dotnet restore ScriptTanks.sln
+      - run: dotnet build ScriptTanks.sln -warnaserror --no-restore
+      - run: dotnet test ScriptTanks.sln --no-build --verbosity normal
